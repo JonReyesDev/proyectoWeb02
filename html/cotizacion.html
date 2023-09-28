@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizacion</title>
+    <link rel="stylesheet" href="/css/cotizacion.css">
+</head>
+<body>
+    <header>
+        <h1>Autos Patria Venta de automoviles nuevos</h1>
+        <h2>Cotizacion</h2>
+    </header>
+    <section>
+        <header>
+            <center>
+                <h3>Datos del automovil</h3>
+            </center>
+        </header>
+
+        <label for="">Valor de auto</label>
+        <input type="number" name="valorAuto" id="valorAuto" required><br>
+
+        <label for="">Porcentaje Pago inicial</label>
+        <input type="number" name="porcentaje" id="porcentaje"><br>
+
+        <label for="Plazos"></label>
+        <select name="plazos" id="plazos">
+            <option value="12">12 meses</option>
+            <option value="24">24 meses</option>
+            <option value="36">36 meses</option>
+            <option value="48">48 meses</option>
+            <option value="60">60 meses</option>
+        </select>
+        <br>
+        <br>
+
+        <hr>
+            Calculos
+        <hr>
+
+        <label for="">Pago inicial</label>
+        <input type="text" id="pagoInicial" readonly><br>
+
+        <label for="">Total a financiar</label>
+        <input type="text" name="totalFin" id="totalFin"><br>
+
+        <label for="">Pago mensual</label>
+        <input type="text" name="pagoMensual" id="pagoMensual" readonly><br>
+
+        <button id="btnCalcular">Calcular</button>
+    </section>
+</body>
+<script src="/js/app.js"></script>
+</html>

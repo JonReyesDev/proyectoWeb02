@@ -1,0 +1,75 @@
+header{
+    background-color: #336699;
+    color: white;
+    padding: 20px;
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: black;
+}
+
+input[type="number"],select{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+section{
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+label[for="pagoInicial"],
+label[for="totalFin"],
+label[for="pagoMensual"]{
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+input[type="text"]{
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: 336699;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #224466;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/prac02.css">
+
+</head>
+<body>
+    <center>
+        <div id="container">
+            
+            <header id="head">
+                <p class="text-head">
+                    ¿Cuál es tu IMC?
+                </p>
+            </header>
+    
+            <section id="mini-container">
+                <label for=""><b>¿Cuál es tu peso? (en kg)</b></label>
+                <input type="number" name="Peso" id="valorPeso" required><br>
+
+                <label for=""><b>¿Cuál es tu altura? (en metros)</b></label>
+                <input type="number" name="Altura" id="valorAltura">
+                <button id="btnCalcular">Calcular</button>
+                
+
+                <center>
+                    <div id="head-imc">
+                        <p class="calculo-text">
+                            Este es tu IMC :
+                        </p>
+                    </div>
+                </center>
+
+                <center>
+                    <br>
+                <input type="text" id="imc" readonly><br>
+                
+                </center>
+                <br>
+                <br>
+                <img src="/img/imc.png" alt="">
+                
+            </section>
+        </div>
+    </center>
+</body>
+<script src="/js/prac02.js"></script>
+</html>
+
