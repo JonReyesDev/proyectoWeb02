@@ -1,23 +1,32 @@
-header{
+header { 
     background-color: #336699;
     color: white;
     padding: 20px;
-}
-
-h1{
+  }
+  
+  p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+    font-size: 17px;
+  }
+  
+  h1 {
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 36px;
-}
-
-label{
+  }
+  
+  label {
     display: block;
     margin-bottom: 10px;
     font-size: 18px;
     color: black;
-}
-
-input[type="number"],select{
+  }
+  
+  input[type="number"],
+  select {
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -25,32 +34,32 @@ input[type="number"],select{
     border-radius: 5px;
     margin-bottom: 20px;
     box-sizing: border-box;
-}
-
-section{
+  }
+  
+  section {
     background-color: #f9f9f9;
     border: 2px solid #ddd;
     padding: 20px;
     border-radius: 5px;
     box-sizing: border-box;
     margin-bottom: 40px;
-}
-
-h2{
+  }
+  
+  h2 {
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 24px;
-}
-
-label[for="pagoInicial"],
-label[for="totalFin"],
-label[for="pagoMensual"]{
+  }
+  
+  label[for="pagoInicial"],
+  label[for="totalFin"],
+  label[for="pagoMensual"] {
     font-size: 18px;
     display: inline-block;
     margin-right: 10px;
-}
-
-input[type="text"]{
+  }
+  
+  input[type="text"] {
     width: 30%;
     padding: 10px;
     font-size: 16px;
@@ -58,18 +67,57 @@ input[type="text"]{
     border-radius: 5px;
     margin-bottom: 20px;
     box-sizing: border-box;
-}
-
-button{
+  }
+  
+  table,th,td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  
+  
+  button {
     padding: 10px 20px;
-    background-color: 336699;
+    background-color: #336699;
     color: white;
     font-size: 18px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-button:hover{
+  }
+  
+  button:hover {
     background-color: #224466;
-}
+  }
+  
+  #status {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #aside {
+    width: 100%;
+  }
+  
+  #aside h2 {
+    padding: 20px;
+  }
+  
+  #aside table {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (min-width: 1028px) {
+    #main {
+      display: flex;
+    }
+    #main-container {
+      width: 65%;
+    }
+    #aside {
+      width: 35%;
+      padding: 30px;
+    }
+  }
