@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #000000;
+    font-size: 25px;
+    font-family: 'header';
+  }
+  
+  button {
+    cursor: pointer;
+    font-size: 20px;
+  }
+  input {
+    font-size: 20px;
+  }
+
+  @font-face {
+    font-family: 'header';
+    font-style: normal;
+    font-weight: bolder;
+    src: url('/fonts/TrueType/Jost-600-Semi.ttf') format(TrueType);
+  }
+
+  @font-face {
+    font-family: 'content';
+    font-style: normal;
+    font-weight: bolder;
+    src: url('/fonts/TrueType/Jost-300-Light.ttf') format(TrueType);
+  }
+
+  #header {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #main {
+    display: flex;
+  }
+  
+  #main__container {
+    width: 100%;
+    padding: 30px;
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  .section__input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0px;
+  }
+  
+  .section__input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+  }
+  
+  .section__input label {
+    margin-right: 10px;
+  }
+  
+  .section__input > input {
+    height: 30px;
+    padding: 5px;
+  }
+  
+  .section__buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .section__buttons button {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: white;
+    font-family: 'content';
+  }
+  
+  .section__buttons button:hover {
+    background-color: #000000;
+    color: white;
+
+  }
+  
+  .section__combobox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .section__combobox select {
+    height: 35px;
+    width: 65px;
+    font-size: 22px;
+    font-family: 'content';
+    font-weight: bold;
+  }
+
+  .section__combobox label {
+    margin-bottom: 10px;
+  }
+
+  select option:hover{
+    background-color: black;
+}
+  
+  .section__output {
+    margin: 0 auto;
+    padding: 30px;
+    width: 50%;
+    background-color: #000000;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    align-items: flex-end;
+  }
+  
+  .section__output p {
+    padding: 10px 0px;
+  }
+  
+  #porcentaje-resultados {
+    font-weight: bolder;
+  }
+  
+  #Functions {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #Functions button {
+    margin: 5px 0;
+    height: 60px;
+    width: 300px;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    font-family: 'content';
+    font-weight: bold;
+  }
+  
+  #Functions button:hover{
+    color:black;
+    background-color: white;
+    border-color: rgb(0, 0, 0);
+  }
+  
+  #arrayText {
+    margin: 5px;
+    padding: 20px;
+    width: 50%;
+    height: 300px;
+    font-family: 'content';
+    font-weight: bolder;
+    font-size: 24px;
+
+  }
+  
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  #footer {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border-top: 1px solid white;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #main {
+      flex-direction: column;
+    }
+    #main__section,#main__aside {
+      width: 90%;
+      margin: 10px auto;
+    }
+    .section__output {
+      width: 100%;
+    }
+  }

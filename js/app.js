@@ -101,14 +101,3 @@ btnLimpiar.addEventListener('click', () => {
   estado.innerHTML = 'SE LIMPIARON LOS VALORES'
 
 });
-
-//Funcion para mostrar el promedio de los elementos de array
-
-
-//Funcion para mostrar los valores pares de un arreglo
-
-
-//Funcion para mostrar el valor mayor de los elementos de un arreglo
-
-
-//Funcion para llenar con valores aleatoriosel arreglo

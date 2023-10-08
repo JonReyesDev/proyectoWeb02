@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/random.css">
+  <title>ARREGLOS</title>
+</head>
+<body>
+  <header id="header">
+    <h1 style="color: white;">ARREGLOS</h1>
+  </header>
+
+  <main id="main">
+    <section id="main__container">
+      <h2>Generación de números aleatorios</h2>
+      <div class="section__input-container">
+        <div class="section__input">
+          <label for="">Cantidad de números a generar:</label>
+          <input type="number" name="cantidadNumeros" id="cantidadNumeros" required>
+        </div>
+        <div class="section__buttons">
+          <button id="btnGenerarNumeros"><b>Llenar con números aleatorios</b></button>
+          <button id="btnLimpiar"><b>Limpiar</b></button>
+        </div>
+      </div>
+
+      <div class="section__combobox">
+        <select name="numerosGenerados" id="numerosGenerados">
+            <option value=".">.</option>
+        </select>
+      </div>
+
+      <div class="section__output">
+        <p id="porcentaje-pares">Porcentajes de pares: </p>
+        <p id="porcentaje-impares">Porcentaje de impares: </p>
+        <p id="porcentaje-resultados">Valor simetrico :</p>
+      </div>
+
+      <br>
+      <h2>FUNCIONES</h2>
+      <div id="Functions">
+        <button id="btnMostrarArray">Mostrar arreglo</button>
+        <button id="btnMostrarPares">Mostrar pares</button>
+        <button id="btnMostrarMax">Mostrar máximo</button>
+        <button id="btnMostrarPromedio">Mostrar promedio</button>
+        <button id="btnMostrarMin">Mostrar menor</button>
+        <button id="btnMostrarPorcentajeSimetria">Mostrar Porcentaje Simetría</button>
+
+        <textarea name="arrayText" id="arrayText" cols="1" rows="10" placeholder="" readonly></textarea>
+    </section>
+  </main>
+
+  <footer id="footer">
+    JONATHAN REYES LIZARRAGA
+  </footer>
+
+  <script src="../js/random.js"></script>
+</body>
+</html>
