@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calcula tu IMC</title>
     <link rel="stylesheet" href="/css/prac02.css">
 
 </head>
@@ -18,31 +18,48 @@
             </header>
     
             <section id="mini-container">
-                <label for=""><b>¿Cuál es tu peso? (en kg)</b></label>
-                <input type="number" name="Peso" id="valorPeso" required><br>
+                <div id="calculos_area">
+                    <br>
+                    <br>
+                    <label for=""><b>¿Cuál es tu peso? (en kg)</b></label>
+                    <input type="number" name="Peso" id="valorPeso" required><br>
+    
+                    <label for=""><b>¿Cuál es tu altura? (en metros)</b></label>
+                    <input type="number" name="Altura" id="valorAltura">
+                    <button id="btnCalcular">Calcular</button>
+                </div>
 
-                <label for=""><b>¿Cuál es tu altura? (en metros)</b></label>
-                <input type="number" name="Altura" id="valorAltura">
-                <button id="btnCalcular">Calcular</button>
+                <div class="imc_img">
+                    <img src="/img/nada.jpg" alt="imc" id="img-imc">
+                </div>
                 
-
-                <center>
+                <div class="imc_output">
                     <div id="head-imc">
                         <p class="calculo-text">
-                            Este es tu IMC :
+                                Este es tu IMC :
                         </p>
                     </div>
-                </center>
+                    <div class="imc_output-text">
+                        <input type="text" id="imc" readonly><br>
+                    </div>
+                </div>
 
                 <center>
-                    <br>
-                <input type="text" id="imc" readonly><br>
-                
-                </center>
-                <br>
-                <br>
-                <img src="/img/imc.png" alt="">
-                
+                    <p class="calculo-text">   
+                        Cantidad de calorias que debe consumir diariamente
+                    </p>
+                <table>
+                    <th>Edad</th>
+                    <th>Hombres</th>
+                    <th>Mujeres</th>
+                    <tr>
+                    <td>
+                        <input type="number" name="Edad" id="valorEdad" required>
+                    </td>
+                    <td><input type="text" id="calHombres" readonly></td>
+                    <td><input type="text" id="calMujeres" readonly></td>
+                    </tr>
+                </table>
             </section>
         </div>
     </center>
