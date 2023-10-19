@@ -78,8 +78,27 @@
     color: #ebe8dd;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;     
-  
 }
+
+@font-face {
+    font-family: 'header';
+    font-style: normal;
+    font-weight: bolder;
+    src: url('/fonts/TrueType/Jost-600-Semi.ttf') format(TrueType);
+  }
+
+  @font-face {
+    font-family: 'content';
+    font-style: normal;
+    font-weight: bolder;
+    src: url('/fonts/TrueType/Jost-300-Light.ttf') format(TrueType);
+  }
+
+  h2{
+    font-family: 'header';
+    font-weight: bolder;
+    font-size: 30px;
+  }
 @media screen and (max-width: 768px){
     .slider{
         height: 400px;
