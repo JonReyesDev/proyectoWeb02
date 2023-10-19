@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alumnos</title>
+        <link rel="stylesheet" href="../css/alumno.css">
+    </head>
+    <body>
+        <header>
+            <div class="col-i">
+                <figure class="header-logo">
+                    <img src="../img/SIIAA.png" alt="Logo">
+                </figure>
+                <div class="h_text">
+                    <h1>Alumnos</h1>
+                    <h3>Grupo TEI 7-3</h3>
+                </div>
+            </div>
+        </header>
+        <section class="home" id="home">
+            <h3>Alumnos</h3>
+            <br>
+            <ul class="lista-alumnos">
+
+            </ul>
+        </section>
+        <center>
+        <template id="template">
+            <li class="item">
+                <figure class="item-img">
+                    <img src="../img/01.png" alt="Alumno/a" class="foto">
+                </figure>
+                <div class="item-content">
+                    <div class="c1">
+                        <div class="text">
+                            <p>Matricula:</p>
+                            <p class="matricula"></p>
+                        </div>
+                        <div class="text">
+                            <p>Nombre:</p>
+                            <p class="nombre"></p>
+                        </div>
+                    </div>
+                    <div class="c2">
+                        <div class="text">
+                            <p>Grupo:</p>
+                            <p class="grupo"></p>
+                        </div>
+                        <div class="text">
+                            <p>Carrera:</p>
+                            <p class="carrera"></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </template>  
+        </center>      
+        <script src="../js/alumno.js"></script>
+    </body>
+</html>
